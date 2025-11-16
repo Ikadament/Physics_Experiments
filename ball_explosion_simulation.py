@@ -30,6 +30,9 @@ horizontal_force_max = 500
 vertical_force_min = 5
 vertical_force_max = 10
 
+small_ball_min = 5
+small_ball_max = 25
+
 small_balls = []
 origin_ball = OriginBall(20, 0.85, 300, 50)
 
@@ -38,7 +41,7 @@ def reset_explosion_simulation():
     global small_balls, origin_ball
     small_balls = []
     origin_ball = OriginBall(20, 0.85, 300, 50)
-    instantiate_small_ball(10)
+    instantiate_small_ball(random.randint(small_ball_min,small_ball_max))
 
 
 def instantiate_small_ball(nb_ball):
@@ -92,4 +95,5 @@ def ball_explosion_simulation():
 
 
 if __name__ == "__main__":
+    reset_explosion_simulation()
     ball_explosion_simulation()
