@@ -1,0 +1,10 @@
+{
+    "defaults": {
+        "colours": {
+            "normal_bg": "#000000",
+            "hovered_bg": "#444444",
+            "disabled_bg": "#555555",
+            "normal_text": "#FFFFFF"
+        }
+    }
+}
